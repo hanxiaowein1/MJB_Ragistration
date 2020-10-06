@@ -8,6 +8,7 @@ TaskThread::~TaskThread()
 	for (std::thread& thread : pool) {
 		if (thread.joinable())
 			thread.join();
+
 	}
 }
 
